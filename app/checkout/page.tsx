@@ -8,13 +8,8 @@ import { Navbar } from "@/components/navbar"
 import { Loader2, CreditCard, Check } from "lucide-react"
 
 const planDetails = {
-  starter: { name: "Starter", price: "$49", features: ["2 MT5 accounts", "All signals", "Email support"] },
-  pro: { name: "Pro", price: "$99", features: ["5 MT5 accounts", "All signals", "Priority support", "Risk tools"] },
-  enterprise: {
-    name: "Enterprise",
-    price: "$249",
-    features: ["Unlimited accounts", "All signals", "24/7 support", "Custom features"],
-  },
+  starter: { name: "Trial", price: "Free", features: ["1 MT5 account", "All signals", "7 days free trial"] },
+  pro: { name: "Pro", price: "$10", features: ["3 MT5 accounts", "All signals", "Priority support", "Risk tools"] },
 }
 
 function CheckoutContent() {

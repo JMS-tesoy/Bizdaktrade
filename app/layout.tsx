@@ -1,48 +1,52 @@
-import type React from "react"
-import type { Metadata } from "next"
-import { Geist, Geist_Mono } from "next/font/google"
-import { Analytics } from "@vercel/analytics/next"
-import "./globals.css"
+import type React from "react";
+import { Geist, Geist_Mono } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
+import "./globals.css";
+import { ThemeProvider } from "@/components/theme-provider";
+import { SessionProvider } from "next-auth/react";
+import { metadata } from "./metadata";
 
-const _geist = Geist({ subsets: ["latin"] })
-const _geistMono = Geist_Mono({ subsets: ["latin"] })
+const _geist = Geist({ subsets: ["latin"] });
+const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
-// <CHANGE> Updated metadata for copy trading platform
-export const metadata: Metadata = {
-  title: "FINBRO Copy - Professional Forex Copy Trading",
-  description:
-    "Copy professional forex trading signals directly to your MT5 account. Real-time signal delivery via REST API.",
-  generator: "v0.app",
-  icons: {
-    icon: [
-      {
-        url: "/icon-light-32x32.png",
-        media: "(prefers-color-scheme: light)",
-      },
-      {
-        url: "/icon-dark-32x32.png",
-        media: "(prefers-color-scheme: dark)",
-      },
-      {
-        url: "/icon.svg",
-        type: "image/svg+xml",
-      },
-    ],
-    apple: "/apple-icon.png",
-  },
-}
+export { metadata };
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode
+  children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        {/* Inline script to avoid theme hydration mismatch: read persisted theme (localStorage)
+            or system preference and apply the `dark` class before React hydrates. */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(() => {
+  try {
+    const key = 'theme'
+    const stored = localStorage.getItem(key)
+    const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+    const isDark = stored === 'dark' || (!stored && prefersDark)
+    if (isDark) {
+      document.documentElement.classList.add('dark')
+      document.documentElement.style.colorScheme = 'dark'
+    } else {
+      document.documentElement.classList.remove('dark')
+      document.documentElement.style.colorScheme = 'light'
+    }
+  } catch (e) {}
+})()`,
+          }}
+        />
+      </head>
       <body className={`font-sans antialiased`}>
-        {children}
-        <Analytics />
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem={true}>
+          <SessionProvider>{children}</SessionProvider>
+          <Analytics />
+        </ThemeProvider>
       </body>
     </html>
-  )
+  );
 }

@@ -8,9 +8,9 @@ export function Footer() {
           <div>
             <Link href="/" className="flex items-center gap-2 mb-4">
               <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-sm">FX</span>
+                <span className="text-primary-foreground font-semibold text-sm">BD</span>
               </div>
-              <span className="font-semibold text-lg">FINBRO Copy</span>
+              <span className="font-semibold text-lg">Bizdaktrade</span>
             </Link>
             <p className="text-sm text-muted-foreground">
               Professional forex copy trading platform with MT5 integration.
@@ -88,7 +88,7 @@ export function Footer() {
 
         <div className="mt-12 pt-8 border-t border-border text-center text-sm text-muted-foreground">
           <p>Trading forex involves significant risk. Past performance is not indicative of future results.</p>
-          <p className="mt-2">&copy; {new Date().getFullYear()} FINBRO Copy. All rights reserved.</p>
+          <p className="mt-2">&copy; {new Date().getFullYear()} Bizdaktrade. All rights reserved.</p>
         </div>
       </div>
     </footer>

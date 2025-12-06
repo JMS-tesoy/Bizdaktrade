@@ -35,7 +35,7 @@ export async function POST(request: NextRequest) {
           price_data: {
             currency: "usd",
             product_data: {
-              name: `FINBRO Copy - ${plan.charAt(0).toUpperCase() + plan.slice(1)} Plan`,
+              name: `Bizdaktrade - ${plan.charAt(0).toUpperCase() + plan.slice(1)} Plan`,
               description: `Copy trading subscription - ${plan} tier`,
             },
             unit_amount: priceAmount,

@@ -12,7 +12,7 @@ export default function ApiDocsPage() {
         <div className="container mx-auto max-w-4xl">
           <h1 className="text-4xl font-bold mb-4">API Documentation</h1>
           <p className="text-muted-foreground mb-8">
-            Complete reference for integrating the FINBRO Copy trading signals API with your MT5 Expert Advisor.
+            Complete reference for integrating the Bizdaktrade trading signals API with your MT5 Expert Advisor.
           </p>
 
           <Card className="mb-6">

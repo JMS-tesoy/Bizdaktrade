@@ -5,21 +5,21 @@ import Link from "next/link"
 
 const plans = [
   {
-    name: "Starter",
-    price: "$49",
-    period: "/month",
-    description: "Perfect for beginners",
-    features: ["Copy all signals", "Up to 2 MT5 accounts", "Email notifications", "Basic support", "API access"],
+    name: "Trial",
+    price: "Free",
+    period: "",
+    description: "7 days free trial",
+    features: ["Copy all signals", "1 MT5 account", "Email notifications", "Basic support", "API access"],
     popular: false,
   },
   {
     name: "Pro",
-    price: "$99",
+    price: "$10",
     period: "/month",
     description: "For serious traders",
     features: [
       "Copy all signals",
-      "Up to 5 MT5 accounts",
+      "Up to 3 MT5 accounts",
       "Email & SMS notifications",
       "Priority support",
       "API access",
@@ -27,23 +27,6 @@ const plans = [
       "Risk management tools",
     ],
     popular: true,
-  },
-  {
-    name: "Enterprise",
-    price: "$249",
-    period: "/month",
-    description: "For institutions",
-    features: [
-      "Copy all signals",
-      "Unlimited MT5 accounts",
-      "All notification channels",
-      "24/7 dedicated support",
-      "API access",
-      "Advanced filtering",
-      "Custom risk profiles",
-      "White-label options",
-    ],
-    popular: false,
   },
 ]
 

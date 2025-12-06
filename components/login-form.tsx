@@ -1,99 +1,83 @@
-"use client"
+"use client";
 
-import type React from "react"
-
-import { useState } from "react"
-import { useRouter } from "next/navigation"
-import { Card, CardContent, CardFooter } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import Link from "next/link"
-import { Loader2 } from "lucide-react"
+import { useState } from "react";
+import { signIn } from "next-auth/react";
+import { useRouter } from "next/navigation";
 
 export function LoginForm() {
-  const router = useRouter()
-  const [email, setEmail] = useState("")
-  const [password, setPassword] = useState("")
-  const [loading, setLoading] = useState(false)
-  const [error, setError] = useState("")
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
+  const router = useRouter();
 
-  async function handleSubmit(e: React.FormEvent) {
-    e.preventDefault()
-    setLoading(true)
-    setError("")
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setError("");
 
-    try {
-      const response = await fetch("/api/auth/login", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email, password }),
-      })
+    const result = await signIn("credentials", {
+      redirect: false,
+      email,
+      password,
+    });
 
-      const data = await response.json()
-
-      if (!data.success) {
-        setError(data.error || "Login failed")
-        return
-      }
-
-      // Store session
-      sessionStorage.setItem("user", JSON.stringify(data.data.user))
-
-      // Redirect to dashboard
-      router.push("/dashboard")
-    } catch {
-      setError("Something went wrong. Please try again.")
-    } finally {
-      setLoading(false)
+    if (result?.error) {
+      setError(result.error);
+    } else {
+      router.replace("/dashboard");
     }
-  }
+  };
 
   return (
-    <Card>
-      <form onSubmit={handleSubmit}>
-        <CardContent className="pt-6 space-y-4">
-          {error && <div className="bg-destructive/10 text-destructive text-sm p-3 rounded-lg">{error}</div>}
-
-          <div className="space-y-2">
-            <Label htmlFor="email">Email</Label>
-            <Input
+    <div className="flex items-center justify-center min-h-screen">
+      <form
+        onSubmit={handleSubmit}
+        className="w-full max-w-md p-8 space-y-6 bg-white rounded-lg shadow-md"
+      >
+        <h2 className="text-2xl font-bold text-center text-gray-800">Login</h2>
+        {error && <p className="text-red-500">{error}</p>}
+        <div className="space-y-4">
+          <div>
+            <label
+              htmlFor="email"
+              className="text-sm font-medium text-gray-700"
+            >
+              Email
+            </label>
+            <input
               id="email"
               type="email"
-              placeholder="you@example.com"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
+              className="w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
             />
           </div>
-
-          <div className="space-y-2">
-            <Label htmlFor="password">Password</Label>
-            <Input
+          <div>
+            <label
+              htmlFor="password"
+              className="text-sm font-medium text-gray-700"
+            >
+              Password
+            </label>
+            <input
               id="password"
               type="password"
-              placeholder="Enter your password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required
+              className="w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
             />
           </div>
-        </CardContent>
-
-        <CardFooter className="flex flex-col gap-4">
-          <Button type="submit" className="w-full" disabled={loading}>
-            {loading && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
-            Log In
-          </Button>
-
-          <p className="text-sm text-muted-foreground text-center">
-            {"Don't have an account?"}{" "}
-            <Link href="/register" className="text-primary hover:underline">
-              Sign up
-            </Link>
-          </p>
-        </CardFooter>
+        </div>
+        <div>
+          <button
+            type="submit"
+            className="w-full px-4 py-2 font-medium text-white bg-indigo-600 rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+          >
+            Login
+          </button>
+        </div>
       </form>
-    </Card>
-  )
+    </div>
+  );
 }

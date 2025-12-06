@@ -1,0 +1,938 @@
+[00:00:00.743] Server  LOG      ✓ Ready in 481ms
+[00:00:06.012] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:06.106] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:06.252] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:06.252] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:06.252] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765012966610}
+[00:00:06.491] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:06.491] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/register","route":"/register"}
+[00:00:06.491] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/register color: rgb(120, 120, 120) color: inherit {"dp":"/register","o":"http://localhost:3000/register","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765012966773}
+[00:05:17.965] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/register color: rgb(120, 120, 120) color: inherit {"dp":"/register","o":"http://localhost:3000/register","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765013278309}
+[00:14:22.970] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:14:23.126] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:14:23.126] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/register","route":"/register"}
+[00:14:23.126] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/register color: rgb(120, 120, 120) color: inherit {"dp":"/register","o":"http://localhost:3000/register","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765013823466}
+[00:37:50.018] Server  ERROR    ⨯ ./app/layout.tsx:9:1
+Module not found: Can't resolve 'next-auth/react'
+   7 | import "./globals.css";
+   8 | import { ThemeProvider } from "@/components/theme-provider";
+>  9 | import { SessionProvider } from "next-auth/react";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 |
+  11 | const _geist = Geist({ subsets: ["latin"] });
+  12 | const _geistMono = Geist_Mono({ subsets: ["latin"] });
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/layout.tsx [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/layout.tsx [Client Component SSR]
+    ./app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:37:50.020] Server  ERROR    ⨯ ./app/layout.tsx:9:1
+Module not found: Can't resolve 'next-auth/react'
+   7 | import "./globals.css";
+   8 | import { ThemeProvider } from "@/components/theme-provider";
+>  9 | import { SessionProvider } from "next-auth/react";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 |
+  11 | const _geist = Geist({ subsets: ["latin"] });
+  12 | const _geistMono = Geist_Mono({ subsets: ["latin"] });
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/layout.tsx [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/layout.tsx [Client Component SSR]
+    ./app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:37:50.021] Server  ERROR    ⨯ ./app/layout.tsx:9:1
+Module not found: Can't resolve 'next-auth/react'
+   7 | import "./globals.css";
+   8 | import { ThemeProvider } from "@/components/theme-provider";
+>  9 | import { SessionProvider } from "next-auth/react";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 |
+  11 | const _geist = Geist({ subsets: ["latin"] });
+  12 | const _geistMono = Geist_Mono({ subsets: ["latin"] });
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/layout.tsx [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/layout.tsx [Client Component SSR]
+    ./app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:37:50.022] Server  ERROR    ⨯ ./app/layout.tsx:9:1
+Module not found: Can't resolve 'next-auth/react'
+   7 | import "./globals.css";
+   8 | import { ThemeProvider } from "@/components/theme-provider";
+>  9 | import { SessionProvider } from "next-auth/react";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 |
+  11 | const _geist = Geist({ subsets: ["latin"] });
+  12 | const _geistMono = Geist_Mono({ subsets: ["latin"] });
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/layout.tsx [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/layout.tsx [Client Component SSR]
+    ./app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:37:50.073] Server  ERROR    ⨯ ./app/layout.tsx:9:1
+Module not found: Can't resolve 'next-auth/react'
+   7 | import "./globals.css";
+   8 | import { ThemeProvider } from "@/components/theme-provider";
+>  9 | import { SessionProvider } from "next-auth/react";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 |
+  11 | const _geist = Geist({ subsets: ["latin"] });
+  12 | const _geistMono = Geist_Mono({ subsets: ["latin"] });
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/layout.tsx [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/layout.tsx [Client Component SSR]
+    ./app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:37:50.075] Server  ERROR    ⨯ ./app/layout.tsx:9:1
+Module not found: Can't resolve 'next-auth/react'
+   7 | import "./globals.css";
+   8 | import { ThemeProvider } from "@/components/theme-provider";
+>  9 | import { SessionProvider } from "next-auth/react";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 |
+  11 | const _geist = Geist({ subsets: ["latin"] });
+  12 | const _geistMono = Geist_Mono({ subsets: ["latin"] });
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/layout.tsx [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/layout.tsx [Client Component SSR]
+    ./app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:37:50.078] Server  ERROR    ⨯ ./app/layout.tsx:9:1
+Module not found: Can't resolve 'next-auth/react'
+   7 | import "./globals.css";
+   8 | import { ThemeProvider } from "@/components/theme-provider";
+>  9 | import { SessionProvider } from "next-auth/react";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 |
+  11 | const _geist = Geist({ subsets: ["latin"] });
+  12 | const _geistMono = Geist_Mono({ subsets: ["latin"] });
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/layout.tsx [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/layout.tsx [Client Component SSR]
+    ./app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:37:50.079] Server  ERROR    ⨯ ./app/layout.tsx:9:1
+Module not found: Can't resolve 'next-auth/react'
+   7 | import "./globals.css";
+   8 | import { ThemeProvider } from "@/components/theme-provider";
+>  9 | import { SessionProvider } from "next-auth/react";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 |
+  11 | const _geist = Geist({ subsets: ["latin"] });
+  12 | const _geistMono = Geist_Mono({ subsets: ["latin"] });
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/layout.tsx [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/layout.tsx [Client Component SSR]
+    ./app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:38:25.114] Server  ERROR    ⨯ ./app/layout.tsx:9:1
+Module not found: Can't resolve 'next-auth/react'
+   7 | import "./globals.css";
+   8 | import { ThemeProvider } from "@/components/theme-provider";
+>  9 | import { SessionProvider } from "next-auth/react";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 |
+  11 | const _geist = Geist({ subsets: ["latin"] });
+  12 | const _geistMono = Geist_Mono({ subsets: ["latin"] });
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/layout.tsx [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/layout.tsx [Client Component SSR]
+    ./app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:38:25.116] Server  ERROR    ⨯ ./app/layout.tsx:9:1
+Module not found: Can't resolve 'next-auth/react'
+   7 | import "./globals.css";
+   8 | import { ThemeProvider } from "@/components/theme-provider";
+>  9 | import { SessionProvider } from "next-auth/react";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 |
+  11 | const _geist = Geist({ subsets: ["latin"] });
+  12 | const _geistMono = Geist_Mono({ subsets: ["latin"] });
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/layout.tsx [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/layout.tsx [Client Component SSR]
+    ./app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:38:25.117] Server  ERROR    ⨯ ./app/layout.tsx:9:1
+Module not found: Can't resolve 'next-auth/react'
+   7 | import "./globals.css";
+   8 | import { ThemeProvider } from "@/components/theme-provider";
+>  9 | import { SessionProvider } from "next-auth/react";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 |
+  11 | const _geist = Geist({ subsets: ["latin"] });
+  12 | const _geistMono = Geist_Mono({ subsets: ["latin"] });
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/layout.tsx [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/layout.tsx [Client Component SSR]
+    ./app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:38:25.117] Server  ERROR    ⨯ ./app/layout.tsx:9:1
+Module not found: Can't resolve 'next-auth/react'
+   7 | import "./globals.css";
+   8 | import { ThemeProvider } from "@/components/theme-provider";
+>  9 | import { SessionProvider } from "next-auth/react";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 |
+  11 | const _geist = Geist({ subsets: ["latin"] });
+  12 | const _geistMono = Geist_Mono({ subsets: ["latin"] });
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/layout.tsx [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/layout.tsx [Client Component SSR]
+    ./app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:38:25.119] Server  ERROR    ⨯ ./components/navbar.tsx:4:1
+Module not found: Can't resolve 'next-auth/react'
+  2 |
+  3 | import Link from "next/link";
+> 4 | import { useSession, signOut } from "next-auth/react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { Button } from "@/components/ui/button";
+  6 | import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+  7 | import DarkModeToggle from "@/components/dark-mode-toggle";
+
+
+
+Import trace:
+  Server Component:
+    ./components/navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:38:25.120] Server  ERROR    ⨯ ./components/navbar.tsx:4:1
+Module not found: Can't resolve 'next-auth/react'
+  2 |
+  3 | import Link from "next/link";
+> 4 | import { useSession, signOut } from "next-auth/react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { Button } from "@/components/ui/button";
+  6 | import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+  7 | import DarkModeToggle from "@/components/dark-mode-toggle";
+
+
+
+Import trace:
+  Server Component:
+    ./components/navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:38:25.121] Server  ERROR    ⨯ ./components/navbar.tsx:4:1
+Module not found: Can't resolve 'next-auth/react'
+  2 |
+  3 | import Link from "next/link";
+> 4 | import { useSession, signOut } from "next-auth/react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { Button } from "@/components/ui/button";
+  6 | import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+  7 | import DarkModeToggle from "@/components/dark-mode-toggle";
+
+
+
+Import trace:
+  Server Component:
+    ./components/navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:38:25.121] Server  ERROR    ⨯ ./components/navbar.tsx:4:1
+Module not found: Can't resolve 'next-auth/react'
+  2 |
+  3 | import Link from "next/link";
+> 4 | import { useSession, signOut } from "next-auth/react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { Button } from "@/components/ui/button";
+  6 | import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+  7 | import DarkModeToggle from "@/components/dark-mode-toggle";
+
+
+
+Import trace:
+  Server Component:
+    ./components/navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:38:25.123] Server  ERROR    ⨯ ./components/navbar.tsx:4:1
+Module not found: Can't resolve 'next-auth/react'
+  2 |
+  3 | import Link from "next/link";
+> 4 | import { useSession, signOut } from "next-auth/react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { Button } from "@/components/ui/button";
+  6 | import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+  7 | import DarkModeToggle from "@/components/dark-mode-toggle";
+
+
+
+Import trace:
+  Server Component:
+    ./components/navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:38:25.123] Server  ERROR    ⨯ ./components/navbar.tsx:4:1
+Module not found: Can't resolve 'next-auth/react'
+  2 |
+  3 | import Link from "next/link";
+> 4 | import { useSession, signOut } from "next-auth/react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { Button } from "@/components/ui/button";
+  6 | import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+  7 | import DarkModeToggle from "@/components/dark-mode-toggle";
+
+
+
+Import trace:
+  Server Component:
+    ./components/navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:38:25.125] Server  ERROR    ⨯ ./app/layout.tsx:9:1
+Module not found: Can't resolve 'next-auth/react'
+   7 | import "./globals.css";
+   8 | import { ThemeProvider } from "@/components/theme-provider";
+>  9 | import { SessionProvider } from "next-auth/react";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 |
+  11 | const _geist = Geist({ subsets: ["latin"] });
+  12 | const _geistMono = Geist_Mono({ subsets: ["latin"] });
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/layout.tsx [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/layout.tsx [Client Component SSR]
+    ./app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:38:25.126] Server  ERROR    ⨯ ./app/layout.tsx:9:1
+Module not found: Can't resolve 'next-auth/react'
+   7 | import "./globals.css";
+   8 | import { ThemeProvider } from "@/components/theme-provider";
+>  9 | import { SessionProvider } from "next-auth/react";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 |
+  11 | const _geist = Geist({ subsets: ["latin"] });
+  12 | const _geistMono = Geist_Mono({ subsets: ["latin"] });
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/layout.tsx [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/layout.tsx [Client Component SSR]
+    ./app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:38:25.126] Server  ERROR    ⨯ ./app/layout.tsx:9:1
+Module not found: Can't resolve 'next-auth/react'
+   7 | import "./globals.css";
+   8 | import { ThemeProvider } from "@/components/theme-provider";
+>  9 | import { SessionProvider } from "next-auth/react";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 |
+  11 | const _geist = Geist({ subsets: ["latin"] });
+  12 | const _geistMono = Geist_Mono({ subsets: ["latin"] });
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/layout.tsx [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/layout.tsx [Client Component SSR]
+    ./app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:38:25.127] Server  ERROR    ⨯ ./app/layout.tsx:9:1
+Module not found: Can't resolve 'next-auth/react'
+   7 | import "./globals.css";
+   8 | import { ThemeProvider } from "@/components/theme-provider";
+>  9 | import { SessionProvider } from "next-auth/react";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 |
+  11 | const _geist = Geist({ subsets: ["latin"] });
+  12 | const _geistMono = Geist_Mono({ subsets: ["latin"] });
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/layout.tsx [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/layout.tsx [Client Component SSR]
+    ./app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:38:25.128] Server  ERROR    ⨯ ./components/navbar.tsx:4:1
+Module not found: Can't resolve 'next-auth/react'
+  2 |
+  3 | import Link from "next/link";
+> 4 | import { useSession, signOut } from "next-auth/react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { Button } from "@/components/ui/button";
+  6 | import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+  7 | import DarkModeToggle from "@/components/dark-mode-toggle";
+
+
+
+Import trace:
+  Server Component:
+    ./components/navbar.tsx
+    ./app/register/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:38:25.129] Server  ERROR    ⨯ ./components/navbar.tsx:4:1
+Module not found: Can't resolve 'next-auth/react'
+  2 |
+  3 | import Link from "next/link";
+> 4 | import { useSession, signOut } from "next-auth/react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { Button } from "@/components/ui/button";
+  6 | import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+  7 | import DarkModeToggle from "@/components/dark-mode-toggle";
+
+
+
+Import trace:
+  Server Component:
+    ./components/navbar.tsx
+    ./app/register/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:38:25.130] Server  ERROR    ⨯ ./components/navbar.tsx:4:1
+Module not found: Can't resolve 'next-auth/react'
+  2 |
+  3 | import Link from "next/link";
+> 4 | import { useSession, signOut } from "next-auth/react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { Button } from "@/components/ui/button";
+  6 | import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+  7 | import DarkModeToggle from "@/components/dark-mode-toggle";
+
+
+
+Import trace:
+  Server Component:
+    ./components/navbar.tsx
+    ./app/register/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:38:25.131] Server  ERROR    ⨯ ./components/navbar.tsx:4:1
+Module not found: Can't resolve 'next-auth/react'
+  2 |
+  3 | import Link from "next/link";
+> 4 | import { useSession, signOut } from "next-auth/react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { Button } from "@/components/ui/button";
+  6 | import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+  7 | import DarkModeToggle from "@/components/dark-mode-toggle";
+
+
+
+Import trace:
+  Server Component:
+    ./components/navbar.tsx
+    ./app/register/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:38:25.132] Server  ERROR    ⨯ ./components/navbar.tsx:4:1
+Module not found: Can't resolve 'next-auth/react'
+  2 |
+  3 | import Link from "next/link";
+> 4 | import { useSession, signOut } from "next-auth/react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { Button } from "@/components/ui/button";
+  6 | import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+  7 | import DarkModeToggle from "@/components/dark-mode-toggle";
+
+
+
+Import trace:
+  Server Component:
+    ./components/navbar.tsx
+    ./app/register/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:38:25.133] Server  ERROR    ⨯ ./components/navbar.tsx:4:1
+Module not found: Can't resolve 'next-auth/react'
+  2 |
+  3 | import Link from "next/link";
+> 4 | import { useSession, signOut } from "next-auth/react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { Button } from "@/components/ui/button";
+  6 | import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+  7 | import DarkModeToggle from "@/components/dark-mode-toggle";
+
+
+
+Import trace:
+  Server Component:
+    ./components/navbar.tsx
+    ./app/register/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:57:04.398] Server  ERROR    ⨯ ./app/layout.tsx:6:1
+Module not found: Can't resolve 'next-auth/react'
+  4 | import "./globals.css";
+  5 | import { ThemeProvider } from "@/components/theme-provider";
+> 6 | import { SessionProvider } from "next-auth/react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import { metadata } from "./metadata";
+  8 |
+  9 | const _geist = Geist({ subsets: ["latin"] });
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:57:04.398] Server  ERROR    ⨯ ./app/layout.tsx:6:1
+Module not found: Can't resolve 'next-auth/react'
+  4 | import "./globals.css";
+  5 | import { ThemeProvider } from "@/components/theme-provider";
+> 6 | import { SessionProvider } from "next-auth/react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import { metadata } from "./metadata";
+  8 |
+  9 | const _geist = Geist({ subsets: ["latin"] });
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:57:04.400] Server  ERROR    ⨯ ./components/navbar.tsx:4:1
+Module not found: Can't resolve 'next-auth/react'
+  2 |
+  3 | import Link from "next/link";
+> 4 | import { useSession, signOut } from "next-auth/react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { Button } from "@/components/ui/button";
+  6 | import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+  7 | import DarkModeToggle from "@/components/dark-mode-toggle";
+
+
+
+Import trace:
+  Server Component:
+    ./components/navbar.tsx
+    ./app/register/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:57:04.400] Server  ERROR    ⨯ ./components/navbar.tsx:4:1
+Module not found: Can't resolve 'next-auth/react'
+  2 |
+  3 | import Link from "next/link";
+> 4 | import { useSession, signOut } from "next-auth/react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { Button } from "@/components/ui/button";
+  6 | import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+  7 | import DarkModeToggle from "@/components/dark-mode-toggle";
+
+
+
+Import trace:
+  Server Component:
+    ./components/navbar.tsx
+    ./app/register/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:57:04.401] Server  ERROR    ⨯ ./components/navbar.tsx:4:1
+Module not found: Can't resolve 'next-auth/react'
+  2 |
+  3 | import Link from "next/link";
+> 4 | import { useSession, signOut } from "next-auth/react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { Button } from "@/components/ui/button";
+  6 | import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+  7 | import DarkModeToggle from "@/components/dark-mode-toggle";
+
+
+
+Import trace:
+  Server Component:
+    ./components/navbar.tsx
+    ./app/register/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:57:04.402] Server  ERROR    ⨯ ./components/navbar.tsx:4:1
+Module not found: Can't resolve 'next-auth/react'
+  2 |
+  3 | import Link from "next/link";
+> 4 | import { useSession, signOut } from "next-auth/react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { Button } from "@/components/ui/button";
+  6 | import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+  7 | import DarkModeToggle from "@/components/dark-mode-toggle";
+
+
+
+Import trace:
+  Server Component:
+    ./components/navbar.tsx
+    ./app/register/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:57:04.403] Server  ERROR    ⨯ ./components/navbar.tsx:4:1
+Module not found: Can't resolve 'next-auth/react'
+  2 |
+  3 | import Link from "next/link";
+> 4 | import { useSession, signOut } from "next-auth/react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { Button } from "@/components/ui/button";
+  6 | import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+  7 | import DarkModeToggle from "@/components/dark-mode-toggle";
+
+
+
+Import trace:
+  Server Component:
+    ./components/navbar.tsx
+    ./app/register/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:57:04.404] Server  ERROR    ⨯ ./components/navbar.tsx:4:1
+Module not found: Can't resolve 'next-auth/react'
+  2 |
+  3 | import Link from "next/link";
+> 4 | import { useSession, signOut } from "next-auth/react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { Button } from "@/components/ui/button";
+  6 | import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+  7 | import DarkModeToggle from "@/components/dark-mode-toggle";
+
+
+
+Import trace:
+  Server Component:
+    ./components/navbar.tsx
+    ./app/register/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:57:04.679] Server  ERROR    ⨯ ./app/layout.tsx:6:1
+Module not found: Can't resolve 'next-auth/react'
+  4 | import "./globals.css";
+  5 | import { ThemeProvider } from "@/components/theme-provider";
+> 6 | import { SessionProvider } from "next-auth/react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import { metadata } from "./metadata";
+  8 |
+  9 | const _geist = Geist({ subsets: ["latin"] });
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:57:04.680] Server  ERROR    ⨯ ./app/layout.tsx:6:1
+Module not found: Can't resolve 'next-auth/react'
+  4 | import "./globals.css";
+  5 | import { ThemeProvider } from "@/components/theme-provider";
+> 6 | import { SessionProvider } from "next-auth/react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import { metadata } from "./metadata";
+  8 |
+  9 | const _geist = Geist({ subsets: ["latin"] });
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:57:04.681] Server  ERROR    ⨯ ./components/navbar.tsx:4:1
+Module not found: Can't resolve 'next-auth/react'
+  2 |
+  3 | import Link from "next/link";
+> 4 | import { useSession, signOut } from "next-auth/react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { Button } from "@/components/ui/button";
+  6 | import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+  7 | import DarkModeToggle from "@/components/dark-mode-toggle";
+
+
+
+Import trace:
+  Server Component:
+    ./components/navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:57:04.681] Server  ERROR    ⨯ ./components/navbar.tsx:4:1
+Module not found: Can't resolve 'next-auth/react'
+  2 |
+  3 | import Link from "next/link";
+> 4 | import { useSession, signOut } from "next-auth/react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { Button } from "@/components/ui/button";
+  6 | import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+  7 | import DarkModeToggle from "@/components/dark-mode-toggle";
+
+
+
+Import trace:
+  Server Component:
+    ./components/navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:57:04.682] Server  ERROR    ⨯ ./components/navbar.tsx:4:1
+Module not found: Can't resolve 'next-auth/react'
+  2 |
+  3 | import Link from "next/link";
+> 4 | import { useSession, signOut } from "next-auth/react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { Button } from "@/components/ui/button";
+  6 | import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+  7 | import DarkModeToggle from "@/components/dark-mode-toggle";
+
+
+
+Import trace:
+  Server Component:
+    ./components/navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:57:04.683] Server  ERROR    ⨯ ./components/navbar.tsx:4:1
+Module not found: Can't resolve 'next-auth/react'
+  2 |
+  3 | import Link from "next/link";
+> 4 | import { useSession, signOut } from "next-auth/react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { Button } from "@/components/ui/button";
+  6 | import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+  7 | import DarkModeToggle from "@/components/dark-mode-toggle";
+
+
+
+Import trace:
+  Server Component:
+    ./components/navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:57:04.684] Server  ERROR    ⨯ ./components/navbar.tsx:4:1
+Module not found: Can't resolve 'next-auth/react'
+  2 |
+  3 | import Link from "next/link";
+> 4 | import { useSession, signOut } from "next-auth/react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { Button } from "@/components/ui/button";
+  6 | import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+  7 | import DarkModeToggle from "@/components/dark-mode-toggle";
+
+
+
+Import trace:
+  Server Component:
+    ./components/navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:57:04.685] Server  ERROR    ⨯ ./components/navbar.tsx:4:1
+Module not found: Can't resolve 'next-auth/react'
+  2 |
+  3 | import Link from "next/link";
+> 4 | import { useSession, signOut } from "next-auth/react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { Button } from "@/components/ui/button";
+  6 | import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+  7 | import DarkModeToggle from "@/components/dark-mode-toggle";
+
+
+
+Import trace:
+  Server Component:
+    ./components/navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+

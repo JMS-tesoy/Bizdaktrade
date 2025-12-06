@@ -8,28 +8,45 @@ import { Card, CardContent, CardFooter } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
-import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import Link from "next/link"
 import { Loader2 } from "lucide-react"
-
-const plans = [
-  { id: "starter", name: "Starter", price: "$49/mo", accounts: "2 accounts" },
-  { id: "pro", name: "Pro", price: "$99/mo", accounts: "5 accounts" },
-  { id: "enterprise", name: "Enterprise", price: "$249/mo", accounts: "Unlimited" },
-]
+import { validateEmail, validatePassword } from "@/lib/validation"
 
 export function RegistrationForm() {
   const router = useRouter()
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
-  const [plan, setPlan] = useState("pro")
+  const [plan, setPlan] = useState("starter")
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState("")
+  const [passwordError, setPasswordError] = useState("")
+
+  const handlePasswordChange = (value: string) => {
+    setPassword(value)
+    const validationError = validatePassword(value)
+    setPasswordError(validationError || "")
+  }
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
     setLoading(true)
     setError("")
+
+    // Validate email
+    const emailError = validateEmail(email)
+    if (emailError) {
+      setError(emailError)
+      setLoading(false)
+      return
+    }
+
+    // Validate password
+    const pwError = validatePassword(password)
+    if (pwError) {
+      setError(pwError)
+      setLoading(false)
+      return
+    }
 
     try {
       const response = await fetch("/api/auth/register", {
@@ -80,36 +97,31 @@ export function RegistrationForm() {
             <Input
               id="password"
               type="password"
-              placeholder="Create a strong password"
+              placeholder="Min 8 chars, uppercase, number, special char (@$!%*?&)"
               value={password}
-              onChange={(e) => setPassword(e.target.value)}
+              onChange={(e) => handlePasswordChange(e.target.value)}
               required
-              minLength={8}
+              className={passwordError ? "border-destructive" : ""}
             />
+            {passwordError && <p className="text-destructive text-xs mt-1">{passwordError}</p>}
+            {password && !passwordError && (
+              <p className="text-chart-2 text-xs mt-1">✓ Password meets requirements</p>
+            )}
           </div>
 
-          <div className="space-y-3">
-            <Label>Select Plan</Label>
-            <RadioGroup value={plan} onValueChange={setPlan}>
-              {plans.map((p) => (
-                <label
-                  key={p.id}
-                  htmlFor={p.id}
-                  className={`flex items-center justify-between p-4 rounded-lg border cursor-pointer transition-colors ${
-                    plan === p.id ? "border-primary bg-primary/5" : "border-border hover:border-primary/50"
-                  }`}
-                >
-                  <div className="flex items-center gap-3">
-                    <RadioGroupItem value={p.id} id={p.id} />
-                    <div>
-                      <p className="font-medium">{p.name}</p>
-                      <p className="text-sm text-muted-foreground">{p.accounts}</p>
-                    </div>
-                  </div>
-                  <span className="font-semibold">{p.price}</span>
-                </label>
-              ))}
-            </RadioGroup>
+          <div className="space-y-3 p-4 rounded-lg border border-primary bg-primary/5">
+            <div className="space-y-1">
+              <p className="font-semibold text-lg">Trial Plan</p>
+              <p className="text-sm text-muted-foreground">Get started free for 7 days</p>
+            </div>
+            <div className="flex items-center justify-between">
+              <ul className="space-y-1 text-sm">
+                <li>✓ 1 MT5 account</li>
+                <li>✓ Copy all signals</li>
+                <li>✓ Email support</li>
+              </ul>
+              <span className="text-2xl font-bold">Free</span>
+            </div>
           </div>
         </CardContent>
 
@@ -130,3 +142,4 @@ export function RegistrationForm() {
     </Card>
   )
 }
+
